@@ -6,6 +6,6 @@ J'ai décidé de produire un CV qui tient sur une feuille A4, implémenté simpl
 
 Je génère la version PDF avec la fonctionnalité d'impression de Chrome.
 
-Cela donne ceci :
+Cela donne ceci ([version pdf](cv.pdf)) :
 
 <a href="cv.pdf"><img src="cv.png"></a>
