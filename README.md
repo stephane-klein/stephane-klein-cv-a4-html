@@ -9,3 +9,9 @@ Je génère la version PDF avec la fonctionnalité d'impression de Chrome.
 Cela donne ceci ([version pdf](cv.pdf)) :
 
 <a href="cv.pdf"><img src="cv.png"></a>
+
+Pense bête pour convertir le fichier `cv.pdf` au format `png` :
+
+```sh
+$ convert -density 300 cv.pdf -resize 800x -background white -alpha remove -alpha off cv.png
+```
