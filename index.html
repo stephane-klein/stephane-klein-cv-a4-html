@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curriculum Vitae, CV, resume de Stéphane Klein, Artisan Développeur de plus de 20 ans d'expérience</title>
+        <style>
+            :root {
+                --base-color: #212529;
+                --accent-color: #DC3522;
+            }
+
+            html {
+                font-family: sans-serif;
+                font-size: 10pt;
+                line-height: 14pt;
+            }
+
+            a {
+                color: var(--base-color);
+                text-decoration: none;
+            }
+
+            p {
+                margin: 0.5rem 0;
+            }
+
+            .a4-page {
+                width: 210mm;
+                height: 297mm;
+                margin: 20px auto;
+                padding: 0mm 5mm;
+                background-color: white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border: 1px solid #ddd;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                color: var(--base-color);
+            }
+
+            .metainfo {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 0.6rem;
+                color: #999;
+                text-align: right;
+                margin: 0.5rem;
+            }
+
+            .metainfo a {
+                color: #999;
+                text-decoration: none;
+            }
+
+            h2 {
+                margin: 1rem 0 0.5rem 0;
+                font-size: 1.5rem;
+            }
+
+            h2 span {
+                color: var(--accent-color);
+            }
+
+            h3 {
+                margin: 0;
+                font-size: 1.1rem;
+            }
+
+            article header {
+                display: flex;
+                font-size: 0.9rem;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            article header h1 {
+                margin: 1rem 0;
+                text-align: center;
+                color: var(--base-color);
+                font-size: 2.8rem;
+                line-height: 3rem;
+                font-weight: lighter;
+            }
+
+            article header h1 span {
+                font-weight: bold;
+            }
+
+            article header ul {
+                list-style: none;
+                padding: 0;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                color: var(--accent-color);
+            }
+
+            article header ul li {
+                margin: 0;
+            }
+
+            article header ul li + li::before {
+                content: "|";
+                margin: 0 0.2rem;
+            }
+
+            article header ul li a {
+                text-decoration: none;
+                padding: 0.2rem;
+                color: var(--accent-color);
+            }
+
+            article header ul li a svg {
+                margin-right: 0.5em;
+                vertical-align: baseline;
+            }
+
+            article header .baseline {
+                margin: 0;
+                text-align: center;
+                font-style: italic;
+                color: var(--accent-color);
+            }
+
+            article main dl {
+                diplay: block;
+                margin: 0.5rem 0;
+            }
+
+            article main dt {
+                display: inline;
+                font-weight: bold;
+            }
+            article main dd {
+                display: inline;
+                margin: 0;
+            }
+
+            .domaine-d-expertise dl:first-child {
+                margin-top: 0;
+            }
+            .domaine-d-expertise dt {
+                display: block;
+            }
+            .domaine-d-expertise dl {
+                display: block;
+            }
+
+            article main section header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0.5rem 0;
+            }
+
+            article main section header p {
+                margin: 0;
+                font-style: italic;
+            }
+
+            .two-columns {
+                columns: 2;
+                column-gap: 2rem;
+                text-align: justify;
+                hyphens: auto;
+                word-break: break-word;
+            }
+            .two-columns dl {
+                break-inside: avoid;
+            }
+            .two-columns p:first-child {
+                margin-top: 0;
+            }
+
+            .justify {
+                text-align: justify;
+                hyphens: auto;
+                word-break: break-word;
+            }
+        </style>
+    </head>
+    <body>
+        <article class="a4-page">
+            <div class="metainfo">
+                dernière mise à jour le 23 septembre 2024<br />
+                version en ligne sur <a href="https://cv.stephane-klein.info">cv.stephane-klein.info</a>
+            </div>
+            <header>
+                <h1>Stéphane <span>Klein</span></h1>
+
+                <ul>
+                    <li><a href="mailto:contact@stephane-klein.info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><path d="M22 7.535V17a3 3 0 0 1-2.824 2.995L19 20H5a3 3 0 0 1-2.995-2.824L2 17V7.535l9.445 6.297l.116.066a1 1 0 0 0 .878 0l.116-.066z"/><path d="M19 4c1.08 0 2.027.57 2.555 1.427L12 11.797l-9.555-6.37a3 3 0 0 1 2.354-1.42L5 4z"/></g></svg>
+                        <span>contact@stephane-klein.info</span></a>
+                    </li>
+                    <li><a href="tel:+33661487604">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1408 1408"><path fill="currentColor" d="M1408 1112q0 27-10 70.5t-21 68.5q-21 50-122 106q-94 51-186 51q-27 0-53-3.5t-57.5-12.5t-47-14.5T856 1357t-49-18q-98-35-175-83q-127-79-264-216T152 776q-48-77-83-175q-3-9-18-49t-20.5-55.5t-14.5-47T3.5 392T0 339q0-92 51-186Q107 52 157 31q25-11 68.5-21T296 0q14 0 21 3q18 6 53 76q11 19 30 54t35 63.5t31 53.5q3 4 17.5 25t21.5 35.5t7 28.5q0 20-28.5 50t-62 55t-62 53t-28.5 46q0 9 5 22.5t8.5 20.5t14 24t11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14t20.5 8.5t22.5 5q18 0 46-28.5t53-62t55-62t50-28.5q14 0 28.5 7t35.5 21.5t25 17.5q25 15 53.5 31t63.5 35t54 30q70 35 76 53q3 7 3 21"/></svg>
+                        <span>+33 6 61 48 76 04</span></a>
+                    </li>
+                    <li><a href="https://sklein.xyz">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M416 174.74V48h-80v58.45L256 32L0 272h64v208h144V320h96v160h144V272h64z"/></svg>
+                        <span>sklein.xyz</span></a>
+                    </li>
+                    <li>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C167.67 32 96 96.51 96 176c0 128 160 304 160 304s160-176 160-304c0-79.49-71.67-144-160-144m0 224a64 64 0 1 1 64-64a64.07 64.07 0 0 1-64 64"/></svg>
+                            <span>Paris</span>
+                        </span>
+                    </li>
+                </ul>
+
+                <p class="baseline">Artisan développeur de plus de 20 ans d'expérience pouvant être Individual Contributor ou Manager</p>
+            </header>
+            <main>
+                <h2><span>Mes</span> objectifs professionnels</h2>
+
+                    <div class="two-columns">
+                        <p style="break-inside: avoid;">Depuis juillet 2024, je propose mes services en software engineering freelance. Je travaille en régie pour
+                            deux clients, leur apportant mon expertise en développement d'applications web et en DevOps.</p>
+
+                        <p style="break-inside: avoid;">Mon objectif pour ces six prochains mois est d'essayer de développer cette activité.
+                        Sauf opportunité exceptionnelle, je ne suis pas intéressé par un poste en CDI avant mars 2024.</p>
+
+                        <p>Je suis ouvert aux missions de Contributeur Individuel ou de management, au sein de toutes petites structures ou des ETI.</p>
+
+                        <p>Vous pouvez consulter la liste de mes prestations en freelance sur <a href="https://sklein.xyz">&lt;https://sklein.xyz&gt;</a>.</p>
+                    </div>
+
+                <h2><span>Dom</span>aines d'expertise</h2>
+
+                <dl>
+                    <dt>Frontend Development :</dt>
+                    <dd>JavaScript, ReactJS, Svelte, SvelteKit, HTML/CSS avancé, TailwindCSS, Yjs</dd>
+                </dl>
+                <dl>
+                    <dt>Backend Development :</dt>
+                    <dd>Go, Python, JavaScript, GraphQL, REST, gRPC, Playwright, Écriture basique de script Bash, Singer (ETL)</dd>
+                </dl>
+                <dl>
+                    <dt>Database :</dt>
+                    <dd>SQL, PostgreSQL avancé, PL/pgSQL, SQLite, Redis, Clickhouse, Neo4j (Cypher), Metabase</dd>
+                </dl>
+                <dl>
+                    <dt>DevOps :</dt>
+                    <dd>Docker, Vagrant, Postfix, Nginx, Ansible, Terraform, Grafana, Prometheus, Loki, Kubernetes, Debian/Ubuntu/RedHat, Baremetal,
+AWS, Scaleway, OVH, Vector (data pipeline)</dd>
+                </dl>
+                <dl>
+                    <dt>Software Engineering :</dt>
+                    <dd>Git, Scrum, TDD, Lean, GitOps</dd>
+                </dl>
+
+                <h2><span>Exp</span>ériences professionnelles</h2>
+
+                <section>
+                    <header>
+                        <h3>Cofondateur — Value Props</h3>
+                        <p>Septembre 2023 - Juin 2024 (10 mois)</p>
+                    </header>
+                    <main class="justify">
+                        <p>J'ai travaillé de septembre 2023 à juin 2024, en mode « solo dev » sur une application du type « knowledge management » lancée avec trois co-fondateurs. Application web développé en Svelte, Svelte Kit en mode SSR avec hydration, PostgreSQL le tout hébergé chez le cloud provider Scaleway. Plus d'information disponible sur <a href="https://sklein.xyz/fr/posts/2024-04-07_stack-projet-value-props/">sklein.xyz</a>.<p>
+                    </main>
+                </section>
+
+                <section>
+                    <header>
+                        <h3>CTO — Spacefill</h3>
+                        <p>Avril 2019 ‑ Juin 2023 (4 ans)</p>
+                    </header>
+                    <main class="justify">
+                        <p>J'ai rejoint Spacefill parmi les tout premiers employés. En tant que CTO, j'étais responsable des choix techniques, du recrutement et du management des développeurs, le tout en étroite collaboration avec le CPO — cofondateur. Avec mes collègues, nous avons élargi l'équipe tech de 1 à 16 personnes. J'ai commencé par développer une marketplace de stockage en entrepôt, ensuite une web application de type OMS (Order Management System) et une web API publique.</p>
+                    </main>
+                </section>
+                <section>
+                    <header>
+                        <h3>DevOps Engineer, Product Owner — Scaleway</h3>
+                        <p>Janvier 2018 - Avril 2019 (16 mois)</p>
+                    </header>
+                    <main>
+                        <p>J'ai été pendant 10 mois leader d'une petite équipe de trois personnes dont le but était de développer un nouveau produit IaaS de type baremetal-server as service.
+                        Concrètement, une application CLI permettait de gérer tout le cycle de vie — create, login, restart, debug, destroy… — de serveurs préalablement provisionnés et configurés en datacenter. Technologies mise en œuvre : Go, gRPC/Protobuf, PostgreSQL, Minio, DHCP server, iPXE, TFTP, IPMI, Packer. Les 6 mois suivants, j'ai rejoint l'équipe qui travaillait sur le produit "Kubernetes as a Service".</p>
+                    </main>
+                </section>
+                <section>
+                    <header>
+                        <h3>DevOps Engineer — Tech-Angels | Gemnasium</h3>
+                        <p>Janvier 2016 - Décembre 2018 (2 ans)</p>
+                    </header>
+                </section>
+
+                <p style="text-align: center; font-style: italic; margin: 1rem 0;">6 autres expériences entre 2001 et 2016, pour plus de détail consultez <a href="https://cv.stephane-klein.info">cv.stephane-klein.info</a></p>
+
+                <h2><span>Pro</span>jets personnels et bénévolat</h2>
+
+                <div class="two-columns">
+                    <p>En 2014, j'ai été président fondateur de l'association « <a href="https://www.coworking-metz.fr/">Le Poulailler</a> », un espace de coworking à Metz.
+                    De janvier 2023 à juin 2024, j'ai occupé le poste de président de l'association de tennis de table d'Issy-les-Moulineaux,
+                    qui compte environ 15 salariés pour un budget de plus de 300 K€.</p>
+
+                    <p>Imprégné par la culture hacker, je porte un grand intérêt à l'histoire de l'informatique, du software engineering, des logiciels libres,
+                    ainsi qu'au self-hosting. J'aime apprendre en public et je publie mes expérimentations et petits projets sur GitHub.
+                    Lorsque je ne suis pas en train de coder, j'occupe mon temps d'otium à étudier l'histoire des XIXᵉ et XXᵉ siècles, l'épistémologie, la zététique,
+                    l'économie, la philosophie, etc. Je passe mes étés à randonner en montagne et m'initie depuis quelque temps à la randonnée itinérante.
+                        Par ailleurs, je pratique le tennis de table en compétition depuis l'âge de 10 ans. Pour en savoir plus à mon sujet, rendez-vous sur <a href="https://sklein.xyz" style="white-space: nowrap">sklein.xyz</a>.</p>
+                </div>
+            </main>
+            <footer>
+            </footer>
+        </article>
+    </body>
+</html>
