@@ -10,10 +10,15 @@
                 --accent-color: #DC3522;
             }
 
+            @page {
+                size: A4;
+                margin: 0 5mm;
+            }
+
             html {
                 font-family: sans-serif;
                 font-size: 10pt;
-                line-height: 14pt;
+                line-height: 1.4;
             }
 
             a {
@@ -26,31 +31,50 @@
             }
 
             .a4-page {
-                width: 210mm;
-                height: 297mm;
-                margin: 20px auto;
-                padding: 0mm 5mm;
-                background-color: white;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                border: 1px solid #ddd;
-                display: flex;
-                flex-direction: column;
                 position: relative;
                 color: var(--base-color);
             }
 
+            @media screen {
+                .a4-page {
+                    width: 210mm;
+                    height: 297mm;
+                    margin: 20px auto;
+                    padding: 0mm 5mm;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: white;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    border: 1px solid #ddd;
+                }
+            }
+            @media print {
+                .a4-page {
+                    font-family: sans-serif;
+                    font-size: 9pt;
+                    line-height: 1.4;
+                }
+            }
+
             .metainfo {
                 position: absolute;
-                top: 0;
-                right: 0;
+                top: 5mm;
+                right: 5mm;
                 font-size: 0.6rem;
-                color: #999;
+                line-height: 1rem;
+                color: #aaa;
                 text-align: right;
-                margin: 0.5rem;
+            }
+            @media print {
+                .metainfo {
+                    top: 0;
+                    right: 0;
+                    color: #ccc;
+                }
             }
 
             .metainfo a {
-                color: #999;
+                color: #aaa;
                 text-decoration: none;
             }
 
@@ -296,7 +320,7 @@ AWS, Scaleway, OVH, Vector (data pipeline)</dd>
                 <h2><span>Pro</span>jets personnels et bénévolat</h2>
 
                 <div class="two-columns">
-                    <p>En 2014, j'ai été président fondateur de l'association « <a href="https://www.coworking-metz.fr/">Le Poulailler</a> », un espace de coworking à Metz.
+                    <p>En 2014, j'ai été président fondateur de l'association <a href="https://www.coworking-metz.fr/" style="white-space: nowrap">« Le Poulailler »</a>, un espace de coworking à Metz.
                     De janvier 2023 à juin 2024, j'ai occupé le poste de président de l'association de tennis de table d'Issy-les-Moulineaux,
                     qui compte environ 15 salariés pour un budget de plus de 300 K€.</p>
 
@@ -304,7 +328,7 @@ AWS, Scaleway, OVH, Vector (data pipeline)</dd>
                     ainsi qu'au self-hosting. J'aime apprendre en public et je publie mes expérimentations et petits projets sur GitHub.
                     Lorsque je ne suis pas en train de coder, j'occupe mon temps d'otium à étudier l'histoire des XIXᵉ et XXᵉ siècles, l'épistémologie, la zététique,
                     l'économie, la philosophie, etc. Je passe mes étés à randonner en montagne et m'initie depuis quelque temps à la randonnée itinérante.
-                        Par ailleurs, je pratique le tennis de table en compétition depuis l'âge de 10 ans. Pour en savoir plus à mon sujet, rendez-vous sur <a href="https://sklein.xyz" style="white-space: nowrap">sklein.xyz</a>.</p>
+                    Par ailleurs, je pratique le tennis de table en compétition depuis l'âge de 10 ans. Pour en savoir plus à mon sujet, rendez-vous sur &lt;<a href="https://sklein.xyz" style="white-space: nowrap">https://sklein.xyz</a>&gt;.</p>
                 </div>
             </main>
             <footer>
