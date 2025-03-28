@@ -13,5 +13,6 @@ Cela donne ceci ([version pdf](cv.pdf)) :
 Pense bête pour convertir le fichier `cv.pdf` au format `png` :
 
 ```sh
-$ convert -density 300 cv.pdf -resize 800x -background white -alpha remove -alpha off cv.png
+$ convert -density 300 "cv.pdf[0]" -resize 800x -background white -alpha remove -alpha off cv_page1.png
+$ convert -density 300 "cv.pdf[1]" -resize 800x -background white -alpha remove -alpha off cv_page2.png
 ```

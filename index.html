@@ -35,6 +35,10 @@
                 color: var(--base-color);
             }
 
+            UL LI {
+                margin-bottom: 0.5em;
+            }
+
             @media screen {
                 .a4-page {
                     width: 210mm;
@@ -53,29 +57,53 @@
                     font-family: sans-serif;
                     font-size: 9pt;
                     line-height: 1.4;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    box-shadow: none;
+                    background: none;
+                    page-break-before: always;
+                    break-before: always;
                 }
             }
 
             .metainfo {
-                position: absolute;
-                top: 5mm;
-                right: 5mm;
                 font-size: 0.6rem;
                 line-height: 1rem;
                 color: #aaa;
+            }
+
+            .metainfo a {
+                color: #aaa;
+                text-decoration: none;
+            }
+
+            .metainfo.header {
+                position: absolute;
+                top: 5mm;
+                right: 5mm;
                 text-align: right;
             }
             @media print {
-                .metainfo {
+                .metainfo.header{
                     top: 0;
                     right: 0;
                     color: #ccc;
                 }
             }
 
-            .metainfo a {
-                color: #aaa;
-                text-decoration: none;
+            .metainfo.footer {
+                position: absolute;
+                bottom: 2mm;
+                right: 5mm;
+                text-align: right;
+            }
+            @media print {
+                .metainfo.footer{
+                    bottom: -15mm;
+                    right: 0;
+                    color: #ccc;
+                }
             }
 
             h2 {
@@ -208,8 +236,8 @@
     </head>
     <body>
         <article class="a4-page">
-            <div class="metainfo">
-                dernière mise à jour le 23 septembre 2024<br />
+            <div class="metainfo header">
+                dernière mise à jour le 8 avril 2025<br />
                 version en ligne sur <a href="https://cv.stephane-klein.info">cv.stephane-klein.info</a>
             </div>
             <header>
@@ -242,8 +270,7 @@
                 <h2><span>Mes</span> objectifs professionnels</h2>
 
                     <div class="two-columns">
-                        <p style="break-inside: avoid;">Depuis juillet 2024, je propose mes services en software engineering freelance. Je travaille en régie pour
-                            deux clients, leur apportant mon expertise en développement d'applications web et en DevOps.</p>
+                        <p style="break-inside: avoid;">Depuis juillet 2024, je propose mes services en software engineering freelance.</p>
 
                         <p style="break-inside: avoid;">Mon objectif pour ces six prochains mois est d'essayer de développer cette activité.
                         Sauf opportunité exceptionnelle, je ne suis pas intéressé par un poste en CDI avant septembre 2025.</p>
@@ -281,6 +308,32 @@ AWS, Scaleway, OVH, Vector (data pipeline)</dd>
 
                 <section>
                     <header>
+                        <h3>Freelance</h3>
+                        <p>Depuis juillet 2024</p>
+                    </header>
+                    <main class="justify">
+                        <p>Entre juillet 2024 et fin mars 2025, j'ai réalisé en tout 120 jours de prestations, pour 5 clients différents.<p>
+
+                        <ul>
+                            <li>Développement d'une application <a href="https://kit.svelte.dev/docs/glossary#ssr">SSR</a> avec <a href="https://kit.svelte.dev/docs/glossary#hydration">hydration</a> en <a href="https://kit.svelte.dev">SvelteKit</a>, <a href="https://fr.wikipedia.org/wiki/PostgreSQL">PostgreSQL</a>, <a href="https://tailwindcss.com/">TailwindCSS</a> et son déploiement chez le cloud provider <a href="https://www.scaleway.com/">Scaleway</a>.</li>
+
+                            <li>Migration complète de l'infrastructure d'un client vers <a href="https://www.scaleway.com/">Scaleway</a>. Mise en place d'une approche <a href="https://www.gitops.tech/">GitOps</a>, basée sur de l'Infrastructure as Code, Configuration as Code pour automatiser l'intégralité du déploiement. 
+                            Monitoring des serveurs et centralisation des logs. Mise en place de sauvegardes immutables en mode WORM. Adaptation des services à déployer selon les principes Twelve-Factor.
+                            Éléments techniques mis en œuvre : Terraform, Prometheus, Loki, Docker, GitLab-CI, etc.</li>
+
+                            <li>Conception et implémentation d'une architecture de limitation d'accès aux PII (Personally Identifiable Information) pour startup qui développe une application mobile de santé.
+                            Je me suis basé sur les fonctionnalités PostgreSQL suivantes : <em>security definer</em> des fonctions PL/pgSQL, tigger, <em>row level security</em>.
+                            J'ai ensuite documenté comment effectuer l'intégration de ce système dans l'infrastructure existante : Hasura, services serverless, frontend web et l'application mobile.</li>
+
+                            <li>Migration d'une application mobile de Cordova vers Capacitor, pour Android et iOS.</li>
+
+                            <li>Maintenance corrective et évolutive d'une application web développée en ReactJS, Remix, Nest.js et PostgreSQL, le tout hébergé sur Microsoft Azure.</li>
+                        </ul>
+                    </main>
+                </section>
+
+                <section>
+                    <header>
                         <h3>Cofondateur — Value Props</h3>
                         <p>Septembre 2023 - Juin 2024 (10 mois)</p>
                     </header>
@@ -298,6 +351,20 @@ AWS, Scaleway, OVH, Vector (data pipeline)</dd>
                         <p>J'ai rejoint Spacefill parmi les tout premiers employés. En tant que CTO, j'étais responsable des choix techniques, du recrutement et du management des développeurs, le tout en étroite collaboration avec le CPO — cofondateur. Avec mes collègues, nous avons élargi l'équipe tech de 1 à 16 personnes. J'ai commencé par développer une marketplace de stockage en entrepôt, ensuite une web application de type OMS (Order Management System) et une web API publique.</p>
                     </main>
                 </section>
+            </main>
+            <div class="metainfo footer">
+                page 1/2
+            </div>
+        </article>
+
+        <article class="a4-page">
+            <div class="metainfo header">
+                dernière mise à jour le 8 avril 2025<br />
+                version en ligne sur <a href="https://cv.stephane-klein.info">cv.stephane-klein.info</a>
+            </div>
+            <main>
+                <h2 style="margin-top: 2em"><span>Exp</span>ériences professionnelles (suite)</h2>
+
                 <section>
                     <header>
                         <h3>DevOps Engineer, Product Owner — Scaleway</h3>
@@ -316,7 +383,6 @@ AWS, Scaleway, OVH, Vector (data pipeline)</dd>
                 </section>
 
                 <p style="text-align: center; font-style: italic; margin: 1rem 0;">6 autres expériences entre 2001 et 2016, pour plus de détails, consultez <a href="https://cv.stephane-klein.info">cv.stephane-klein.info</a></p>
-
                 <h2><span>Pro</span>jets personnels et bénévolat</h2>
 
                 <div class="two-columns">
@@ -331,8 +397,9 @@ AWS, Scaleway, OVH, Vector (data pipeline)</dd>
                     Par ailleurs, je pratique le tennis de table en compétition depuis l'âge de 10 ans. Pour en savoir plus à mon sujet, rendez-vous sur &lt;<a href="https://sklein.xyz" style="white-space: nowrap">https://sklein.xyz</a>&gt;.</p>
                 </div>
             </main>
-            <footer>
-            </footer>
+            <div class="metainfo footer">
+                page 2/2
+            </div>
         </article>
     </body>
 </html>
