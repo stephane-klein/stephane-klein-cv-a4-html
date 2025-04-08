@@ -17,3 +17,10 @@ Pense bête pour convertir le fichier `cv.pdf` au format `png` :
 $ convert -density 300 "cv.pdf[0]" -resize 800x -background white -alpha remove -alpha off cv_page1.png
 $ convert -density 300 "cv.pdf[1]" -resize 800x -background white -alpha remove -alpha off cv_page2.png
 ```
+
+Une organisaiton m'a demandé un CV anonymisé :
+
+> Les services de .. sont engagés dans la lutte contre les discriminations. Afin de favoriser l'égalité professionnelle,
+> nous vous invitons à vérifier que votre CV ne comporte ni votre photographie, ni votre âge, ni votre genre, ni votre lieu de résidence.
+
+Voici une version anonamisé de mon CV : <a href="cv_anonymisé.pdf">cv_anonymisé.pdf</a>.
