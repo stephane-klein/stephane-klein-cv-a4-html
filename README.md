@@ -8,7 +8,8 @@ Je génère la version PDF avec la fonctionnalité d'impression de Chrome.
 
 Cela donne ceci ([version pdf](cv.pdf)) :
 
-<a href="cv.pdf"><img src="cv.png"></a>
+<a href="cv.pdf"><img src="cv_page1.png"></a>
+<a href="cv.pdf"><img src="cv_page2.png"></a>
 
 Pense bête pour convertir le fichier `cv.pdf` au format `png` :
 
